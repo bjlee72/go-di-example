@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"go.user.org/mock"
+	"go.uber.org/mock/gomock"
 )
 
 func TestComponent_GetAll(t *testing.T) {

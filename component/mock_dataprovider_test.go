@@ -7,7 +7,7 @@ package component
 import (
 	reflect "reflect"
 
-	gomock "github.com/golang/mock/gomock"
+	"go.uber.org/mock/gomock"
 )
 
 // MockDataProvider is a mock of DataProvider interface.
