@@ -4,8 +4,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/bjlee72/go-di-example/src/component"
-	"github.com/bjlee72/go-di-example/src/db"
+	"github.com/bjlee72/go-di-example/component"
+	"github.com/bjlee72/go-di-example/db"
 )
 
 func TestDBDataProvider_toRecords(t *testing.T) {
