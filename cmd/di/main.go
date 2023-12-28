@@ -9,8 +9,8 @@ import (
 )
 
 func main() {
-	cmp := component.NewComponent(
+	cmp := component.New(
 		adaptor.ToDataProvider(
-			db.NewDatabase()))
+			db.New()))
 	fmt.Println(cmp.GetAll())
 }

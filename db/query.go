@@ -4,7 +4,7 @@ type Database struct {
 	// DB internal
 }
 
-func NewDatabase() *Database {
+func New() *Database {
 	return &Database{}
 }
 

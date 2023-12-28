@@ -6,7 +6,7 @@ type Component struct {
 	dataProvider DataProvider
 }
 
-func NewComponent(dp DataProvider) *Component {
+func New(dp DataProvider) *Component {
 	return &Component{
 		dataProvider: dp,
 	}
