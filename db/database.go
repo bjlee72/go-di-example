@@ -16,3 +16,7 @@ func (db *Database) Query() []*Row {
 		{ID: "C"},
 	}
 }
+
+func (db *Database) Provide(input int) (int, error) {
+	return input + 3, nil
+}
