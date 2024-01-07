@@ -10,13 +10,11 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
-resources:
-  containers:
-    - container: example
-      endpoint: molly
-      image: go-di-example/image:40
+container: 
+  image: go-di-example/image:40
+  endpoint: molly
 
 steps:
-- script: /bin/di
+- script: ls -al /bin/
   displayName: 'See if the di binary is in the expected location'
   
