@@ -14,7 +14,7 @@ resources:
   containers:
     - container: example
       endpoint: molly
-      image: silicon-perigee-259504/go-di-example/image:20
+      image: silicon-perigee-259504/go-di-example
 
 steps:
 - script: echo Hello, world!
