@@ -21,12 +21,5 @@ steps:
   displayName: 'Run a one-line script'
 
 - script: |
-    echo $(resources.containers.example.type)
-    echo $(resources.containers.example.registry)
-    echo $(resources.containers.example.repository)
-    echo $(resources.containers.example.tag)
-    echo $(resources.containers.example.digest)
-    echo $(resources.containers.example.URI)
-    echo $(resources.containers.example.location)
-
+    env
   displayName: 'Display the resource detail'
