@@ -10,6 +10,12 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
+resources:
+  containers:
+    - container: go-di-example
+      endpoint: molly
+      image: silicon-perigee-259504/go/di-example/image:20
+
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
