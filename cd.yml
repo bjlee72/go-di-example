@@ -17,9 +17,6 @@ resources:
       image: go-di-example/image:40
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
-
-- script: |
-    /go/bin/di
-  displayName: 'Display the resource detail'
+- script: /bin/di
+  displayName: 'See if the di binary is in the expected location'
+  
