@@ -14,7 +14,7 @@ resources:
   containers:
     - container: image
       endpoint: molly
-      image: us-central1-docker.pkg.dev/silicon-perigee-259504/go-di-example
+      image: silicon-perigee-259504/go-di-example
 
 steps:
 - script: echo Hello, world!
