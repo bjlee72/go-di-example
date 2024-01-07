@@ -11,7 +11,7 @@ pool:
   vmImage: ubuntu-latest
 
 container: 
-  image: silicon-perigee-259504/go-di-example/image:55
+  image: silicon-perigee-259504/go-di-example/image:58
   endpoint: molly
 
 steps:
