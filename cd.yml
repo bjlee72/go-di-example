@@ -21,5 +21,5 @@ steps:
   displayName: 'Run a one-line script'
 
 - script: |
-    env
+    /go/bin/di
   displayName: 'Display the resource detail'
