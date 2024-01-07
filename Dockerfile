@@ -14,5 +14,7 @@ RUN CGO_ENABLED=0 GOOS=linux go install -v ./...
 FROM alpine:latest 
 COPY --from=builder /go/bin/di /bin/di
 
+RUN apk add bash sudo shadow
+
 # Run
 CMD ["/bin/di"]
