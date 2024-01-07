@@ -11,7 +11,7 @@ RUN go mod download
 # Build
 RUN CGO_ENABLED=0 GOOS=linux go install -v ./...
 
-FROM scratch 
+FROM alpine:latest 
 COPY --from=builder /go/bin/di /bin/di
 
 # Run
