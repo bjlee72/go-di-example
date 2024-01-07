@@ -15,7 +15,5 @@ FROM ubuntu:20.04
 
 COPY --from=builder /go/bin/di /bin/di
 
-RUN apk add bash sudo shadow
-
 # Run
 CMD ["/bin/di"]
