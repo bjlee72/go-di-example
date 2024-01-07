@@ -12,9 +12,9 @@ pool:
 
 resources:
   containers:
-    - container: image
+    - container: example
       endpoint: molly
-      image: silicon-perigee-259504/go-di-example
+      image: silicon-perigee-259504/go-di-example/image:40
 
 steps:
 - script: echo Hello, world!
