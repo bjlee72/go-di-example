@@ -14,8 +14,7 @@ resources:
     - container: 
       image: silicon-perigee-259504/go-di-example/image
       endpoint: molly
-      trigger:
-        enabled: true
+      trigger: true
 
 steps:
 - task: printAllVariables@1
