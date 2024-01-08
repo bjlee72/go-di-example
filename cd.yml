@@ -4,17 +4,26 @@
 # https://aka.ms/yaml
 name: CD pipeline
 
-trigger:
-- prod
+trigger: none
 
 pool:
   vmImage: ubuntu-latest
 
-container: 
-  image: silicon-perigee-259504/go-di-example/image:63
-  endpoint: molly
+resources:
+  containers:
+    - container: 
+      image: silicon-perigee-259504/go-di-example/image
+      endpoint: molly
+      trigger:
+        enabled: true
+        tags:
+          include:
+            - latest
 
 steps:
+- task: printAllVariables@1
+  displayName: 'Print all variables'
+
 - script: ls -al /bin/
   displayName: 'See if the di binary is in the expected location'
   
