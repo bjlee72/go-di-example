@@ -14,7 +14,7 @@ resources:
     - container: example
       image: silicon-perigee-259504/go-di-example/image:latest*
       endpoint: molly
-      registry: molly
+      repository: molly
 
 steps:
 - task: printAllVariables@1
