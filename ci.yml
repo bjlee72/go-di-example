@@ -18,3 +18,6 @@ steps:
     repository: 'silicon-perigee-259504/go-di-example/image'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
+    tags: |
+      $(Build.BuildId)
+      latest
