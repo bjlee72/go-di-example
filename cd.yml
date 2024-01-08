@@ -16,8 +16,7 @@ resources:
       endpoint: molly
       trigger:
         tags: 
-          include:
-            - latest
+          - latest
         enabled: true
 
 steps:
