@@ -15,10 +15,10 @@ resources:
       image: silicon-perigee-259504/go-di-example/image
       endpoint: molly
       trigger:
-        enabled: true
-        tags:
+        tags: 
           include:
             - latest
+        enabled: true
 
 steps:
 - task: printAllVariables@1
