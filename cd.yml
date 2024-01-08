@@ -15,8 +15,6 @@ resources:
       image: silicon-perigee-259504/go-di-example/image
       endpoint: molly
       trigger:
-        tags: 
-          - latest
         enabled: true
 
 steps:
